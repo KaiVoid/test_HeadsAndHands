@@ -45,6 +45,7 @@ public abstract class Creature {
     protected void addHealth(int addHealth) {
         if (this.health == 0) {
             System.out.println("Can't heal a dead creature.");
+            return;
         }
         if (this.health < healthMax) {
             int tempHealth = this.health + addHealth;
